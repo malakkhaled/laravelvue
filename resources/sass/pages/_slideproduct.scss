@@ -1,0 +1,70 @@
+.slider {
+    padding: 110px 0 0 0;
+    position: relative;
+    .overlay {
+        @include overlay;
+    }
+    h2 {
+        position: absolute;
+        top: 350px;
+        right: 44%;
+        font-size: 50px;
+        z-index: 999;
+        color: #fff;
+        font-family: $firstFont;
+    }
+}
+
+
+.product{
+    padding-right: 50px;
+    padding-left: 50px;
+    .right{
+        text-align: right;
+        h4{
+            @include h1;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        .eleup{
+            h5{
+                @include h1;
+                margin-bottom: 20px;
+                margin-top: 30px;
+                font-weight: bold;
+            }
+            li{
+
+                margin-top: 5px;
+                font-size: 15px;
+                font-family: $thirdFont;
+            }
+
+
+
+        }
+
+        .colors{
+            li{
+                @extend %color;
+                margin-bottom: 10px;
+                margin-left: auto;
+
+            }
+
+        }
+        .size{
+            li{
+                @extend %size;
+                span{
+                    position: relative;
+                    top: 2px;
+                }
+            }
+
+        }
+    }
+
+}
+
+

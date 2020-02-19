@@ -1,0 +1,35 @@
+.page-footer{
+    padding-top: 100px;
+    hr{
+        background: $thirdColor;
+    }
+    .row{
+        flex-direction: row-reverse;
+        a{
+            @include h1;
+            text-decoration: none;
+            font-size: 16px;
+            color: $firstColor;
+        }
+        p{
+            @include p;
+            margin-top: 20px;
+        }
+
+            span{
+                @extend %logo;
+            }
+
+    }
+}
+
+
+.footer-copyright{
+    background: $thirdColor;
+    p{
+
+        font-family: $secondFont;
+        color: #fff;
+
+    }
+}

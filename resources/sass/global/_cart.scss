@@ -1,0 +1,119 @@
+.cartitems {
+    @extend %padding;
+    .input-back {
+        background: $firstColor;
+        border: 1px solid $firstColor;
+        padding: 15px;
+        width: 100%;
+        margin-bottom: 50px;
+        input {
+            background: #fff;
+            height: 42px;
+            padding: 15px;
+            border: 1px solid #e7e7e7;
+            color: #000;
+            font-size: 14px;
+            float: right;
+
+            z-index: 2;
+
+            text-align: right;
+        }
+        .btn {
+            height: 39px;
+
+            position: relative;
+
+            left: 40px;
+
+            top: 1px;
+           font-family: $firstFont;
+            z-index: 1;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+    }
+    .card {
+        background: $firstColor;
+        text-align: right;
+        font-family: $thirdFont;
+        .card-body {
+            h5{
+                color:#fff;
+            }
+        }
+            ul {
+                li {
+                    color: $secondColor;
+                    font-size: 18px;
+                    text-align: right;
+                    direction: rtl;
+                    span{
+                        float: left;
+                    }
+                        a{
+                            display: block;
+                            color: $firstColor;
+                            font-weight: bold;
+                            padding: 10px 0;
+                            text-decoration: none;
+                        }
+                        .forms{
+                            display: none;
+                            margin-top: 30px;
+                            select,input{
+                                text-align: right;
+                                margin-bottom: 20px;
+                                cursor: pointer;
+                            }
+                        }
+
+                }
+            }
+
+        .card-body.text-center{
+            .btn{
+                border: 1px solid #fff;
+                color: #fff;
+                &:hover{
+                    color: $thirdColor;
+                    border: 2px solid $thirdColor;
+                }
+
+            }
+
+        }
+    }
+    .btn {
+        @extend %btn;
+    }
+    .btn.only {
+        width: 90px;
+        margin-top: 90px;
+    }
+}
+
+
+//checkout
+h2{
+    @include h1;
+    text-align: right;
+    margin-bottom: 50px !important;
+}
+.forms-checkout{
+    text-align: right;
+h6{
+    @include p;
+    color:$firstColor;
+    margin-top: 0;
+}
+span{
+    @include p;
+    margin-top: 0;
+}
+input,select,textarea{
+    text-align: right;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+}

@@ -1,0 +1,17 @@
+.brand{
+    @extend %padding;
+    .box{
+
+
+        img{
+            max-width: 100%;
+            margin-top: 90px;
+            box-shadow: 0 0 20px 0 rgba(228, 215, 215, 0.63);
+            padding: 20px;
+            height: 265px;
+
+
+        }
+    }
+
+}

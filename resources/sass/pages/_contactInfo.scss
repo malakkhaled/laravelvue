@@ -1,0 +1,76 @@
+.aboutinfo{
+    @extend %padding;
+    p{
+        @include p;
+        padding-top: 80px;
+    }
+}
+
+
+.aboutinfo{
+    @extend %padding;
+    h2{
+        @include h1;
+    }
+}
+
+.pay{
+    @extend %padding;
+    background: #f6f6f6;
+    h2{
+        @include h1;
+        margin-bottom: 50px;
+    }
+    .row{
+        img{
+            width: 150px;
+        }
+    }
+}
+
+//form
+.form{
+    @extend %padding;
+    h2{
+        @include h1;
+
+    }
+    p{
+        @include p;
+        margin-bottom: 50px;
+    }
+    .row{
+        input,textarea{
+            text-align: right;
+            border-radius: 0;
+            border-color: #ebd68f;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .btn{
+            background: $firstColor;
+            border: none;
+            float: right;
+            padding: 10px 20px;
+            font-family: $thirdFont;
+            font-size: 15px;
+        }
+    }
+    .item{
+        direction: rtl;
+        text-align: right;
+        margin-bottom: 25px;
+        h6{
+            @include h1;
+            font-size: 18px;
+            font-weight: bold;
+
+        }
+        span{
+            @include p;
+            font-size: 14px;
+        }
+    }
+
+}

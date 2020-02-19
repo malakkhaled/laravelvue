@@ -1,0 +1,232 @@
+.sproduct {
+    text-align: right;
+    .contents {
+        z-index: 9;
+        margin-top: 220px;
+        position: relative;
+        right: 0;
+        padding: 0 100px;
+        top: 0;
+        h1 {
+            @include h1;
+            font-size: 46px;
+            line-height: 59px;
+            font-weight: 500;
+            margin-bottom: 35px;
+            padding-top: 0;
+        }
+        .price {
+            font-size: 20px;
+            font-weight: 500;
+            font-family: $secondFont;
+        }
+        p {
+            @include p;
+            margin-top: 35px;
+            margin-bottom: 60px;
+        }
+        .colors {
+            margin-bottom: 20px;
+            .color {
+                @extend %color;
+                display: inline-block;
+            }
+        }
+        .size {
+            margin-bottom: 20px;
+            li {
+                @extend %size;
+                display: inline-block;
+            }
+        }
+        .clear {
+            margin-bottom: 35px;
+            a {
+                @extend %link;
+                i {
+                    color: $fourthColor;
+                    margin-right: 6px;
+                }
+            }
+        }
+        .btn {
+            @extend %btn;
+            .count {
+                padding: 0 20px;
+                font-weight: 400;
+                font-size: 19px;
+            }
+        }
+        .groups {
+            margin-top: 60px;
+            font-family: $firstFont;
+            direction: rtl;
+            span {
+                display: block;
+            }
+            .fav {
+                margin-bottom: 60px;
+                #showfav {
+                    display: none;
+                }
+                a {
+                    @extend %link;
+
+                    i {
+                        color: $thirdColor;
+                        margin-right: 6px;
+                    }
+                }
+            }
+            .info-section {
+                .info-f {
+                    ul {
+                        li {
+                            span {
+                                @include h1;
+                                font-weight: bold;
+                                margin: 15px 0 10px 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .rev-section {
+                .reviews {
+                    display: none;
+                    .h3 {
+                        @include h1;
+                        margin-bottom: 30px;
+                    }
+                    ul {
+                        li {
+                            i {
+                                margin-right: 6px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .form-group {
+                        margin-top: 55px;
+                        .note {
+                            @include h1;
+                            font-weight: bold;
+                            margin: 15px 0 10px 0;
+                        }
+                        .forms {
+                            margin-top: 25px;
+                            ul {
+                                li {
+                                    input {
+                                        width: 200px;
+                                        border-radius: 0;
+                                        height: 50px;
+                                        margin-bottom: 10px;
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                            textarea {
+                                border-radius: 0;
+                                margin-bottom: 55px;
+                            }
+                            .btn {
+                                background: $secondColor;
+                                color: #fff;
+                                @extend %btn;
+                            }
+                        }
+                    }
+                }
+            }
+            .left {
+                margin-bottom: 30px;
+                border-bottom: 1px solid $firstColor;
+                padding-bottom: 25px;
+                cursor: pointer;
+                i {
+                    float: left;
+                    color: $thirdColor;
+                    position: relative;
+                    top: 1px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+//alert
+.msg {
+    border: 1px dotted $thirdColor;
+    margin-top: 100px;
+    height: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: none;
+    p {
+        color: $secondColor;
+        font-family: "Cairo", sans-serif;
+        font-size: 18px;
+        padding-top: 25px;
+        text-align: right;
+        direction: rtl;
+    }
+}
+
+//wishcomponent
+
+.wishlist {
+    @extend %padding;
+    .row {
+        h3 {
+            @include h1;
+            margin-bottom: 20px;
+        }
+    }
+
+    .items-list {
+        .mr {
+            margin-top: 60px;
+            span {
+                @include p;
+                position: relative;
+                top: 40px;
+            }
+            ul {
+                li {
+                    @include p;
+                    margin-top: 0;
+
+                    img {
+                        width: 100px;
+                        margin-left: 20px;
+                    }
+                }
+                .svg-back {
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid $secondColor;
+                    padding: 20px;
+                    border-radius: 50%;
+                    background: #fff;
+                    cursor: pointer;
+                    position: absolute;
+
+                    right: -60px;
+                    i {
+                        color: $thirdColor;
+                        position: relative;
+                        bottom: 15px;
+                        left: 7px;
+                    }
+                }
+            }
+
+            a {
+                background: $secondColor;
+                color: #fff;
+                @extend %btn;
+            }
+        }
+    }
+}
